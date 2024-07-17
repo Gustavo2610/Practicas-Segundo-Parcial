@@ -1,0 +1,72 @@
+/* Diseño general de la aplicación */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Asegura que la altura mínima sea la de la pantalla */
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box; /* Incluye el padding y border en el tamaño total del elemento */
+  font-family: 'Arial', sans-serif; /* Tipografía uniforme */
+  background-color: #eaeaea; /* Fondo gris claro */
+}
+
+.card {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #ffffff; /* Fondo blanco para los cards */
+  max-width: 600px;
+  width: 100%;
+}
+
+.title {
+  color: #333;
+  font-size: 2.5rem; /* Ajustado para un mejor equilibrio */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Sombra más sutil */
+}
+
+.button {
+  background-color: #4CAF50; /* Color verde para un diseño moderno */
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 4px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+.button:hover {
+  background-color: #45a049; /* Efecto hover */
+}
+
+/* Estilos para el input */
+input[type="number"], input[type="text"] {
+  font-size: 16px;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #007bff; /* Color azul para el borde */
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="number"]:focus, input[type="text"]:focus {
+  border-color: #0056b3; /* Azul más oscuro al enfocar */
+}
+
+/* Estilos para elementos <p> y <label> */
+p, label {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  text-align: center;
+}
